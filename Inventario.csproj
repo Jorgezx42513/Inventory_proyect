@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Authors>Jorge Benavides</Authors>
+    <Product>Inventori</Product>
+    <PackageIcon>inventario.png</PackageIcon>
+    <FileVersion>1.0</FileVersion>
+    <ApplicationIcon>inventario.ico</ApplicationIcon>
+    <RootNamespace>Inventory</RootNamespace>
+    <AssemblyName>Inventory</AssemblyName>
+    <StartupObject>Inventario.App</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="add_ico.png" />
+    <None Remove="switch_Off.png" />
+    <None Remove="switch_On.png" />
+    <None Remove="Varc.png" />
+    <None Remove="Varcode.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="inventario.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Pictures\Saved Pictures\inventario.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="MySql.Data" Version="8.0.30" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="add_ico.png" />
+    <Resource Include="switch_Off.png" />
+    <Resource Include="switch_On.png" />
+    <Resource Include="Varc.png" />
+    <Resource Include="Varcode.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+</Project>
