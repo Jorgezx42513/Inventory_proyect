@@ -34,6 +34,7 @@ namespace Inventario
         InputSimulator sim = new InputSimulator();
         deletePro deletePro = new deletePro();
         setVals setVals = new setVals();
+        int i = 0;
 
         public MainWindow()
         {
