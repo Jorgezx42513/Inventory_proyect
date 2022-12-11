@@ -9,10 +9,8 @@ namespace Inventario
 {
     internal class OpenPortMy : GetDir_Act
     {
-        public void ExeComand(string command, string path)
+        public void ExeComand(string command)
         {
-            string dir = $"{getDir()}{path}";
-
             Process cmd = new Process();
             cmd.StartInfo.FileName = "cmd.exe";
             cmd.StartInfo.RedirectStandardInput = true;
@@ -22,7 +20,7 @@ namespace Inventario
             cmd.Start();
 
             cmd.StandardInput.WriteLine("cd/");
-            cmd.StandardInput.WriteLine($@"cd {dir}");
+            cmd.StandardInput.WriteLine($@"cd {getDir()}");
             cmd.StandardInput.WriteLine(command);
             cmd.StandardInput.Flush();
             cmd.StandardInput.Close();

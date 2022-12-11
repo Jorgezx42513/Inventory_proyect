@@ -38,7 +38,7 @@ namespace Inventario
         public MainWindow()
         {
             InitializeComponent();
-            openPort.ExeComand(@"mysql\bin\mysqld --defaults-file=mysql\bin\my.ini --standalone", @"\MySQL\");
+            openPort.ExeComand(@"mysql\bin\mysqld --defaults-file=mysql\bin\my.ini --standalone");
             AddPro.SetCommand("truncate bill");
             CompleteM.GetData(GripProduc);           
             manager.StateServer = true;
