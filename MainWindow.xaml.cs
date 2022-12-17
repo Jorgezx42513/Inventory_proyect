@@ -34,7 +34,7 @@ namespace Inventario
         InputSimulator sim = new InputSimulator();
         deletePro deletePro = new deletePro();
         setVals setVals = new setVals();
-
+        Act_MyIni act_MyIni = new Act_MyIni();
         public MainWindow()
         {
             InitializeComponent();

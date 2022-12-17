@@ -27,5 +27,23 @@ namespace Inventario
             }
             return dir;
         }
+        public string getDir_Ini()
+        {
+            string dir = "";
+            string[] SplitDir = Directory.GetCurrentDirectory().Split(@"\");
+            foreach (string s in SplitDir)
+            {
+                if (s != "Inventario")
+                {
+                    dir += @$"{s}/";
+                }
+                else
+                {
+                    dir += @$"{s}/{s}";
+                    break;
+                }
+            }
+            return dir;
+        }
     }
 }

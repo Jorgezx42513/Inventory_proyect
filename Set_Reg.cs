@@ -16,7 +16,7 @@ namespace Inventario
         }
         public void setGeneralReg()
         {
-            SetCommand("INSERT INTO gen_reg(date,value) Values('" + today.ToString("yyy-MM-dd") + "','" + generate_Gen("SELECT * FROM day_reg") + "')");
+            SetCommand("INSERT INTO gen_reg(date,Value) Values('" + today.ToString("yyy-MM-dd") + "','" + generate_Gen("SELECT * FROM day_reg") + "')");
         }
     }
 }
